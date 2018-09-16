@@ -1,8 +1,39 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
     <body>
         <h1>Frisbee Fun</h1>
         <p>The following zip file is our entire project:</p>
-        <a href="./data/sears-tower-test.zip" download>Click here to download.</a>
+        <a href="./data/sears-tower-test.zip" download><button class="btn"><i class="fa fa-download"></i> Click here to download.</button></a>
+        <form action="index.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Input the project</legend>
+                <div>
+                    <label id ="fullname">
+                        Enter your full name:<br>
+                        <input type="text" id="full-name" name="fullname" >
+                    </label>
+                </div>
+
+                <div>
+                    <label id ="date">
+                        Please enter the date:<br>
+                        <input type="date" name="date"><br>
+                    </label>
+                </div>
+
+                <div>
+                    <label id="upload">
+                        Please upload the file:<br>
+                        <input type="file" >
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
     </body>
 </html>
