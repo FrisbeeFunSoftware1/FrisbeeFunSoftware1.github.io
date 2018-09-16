@@ -13,6 +13,69 @@
     background-color: RoyalBlue;
 }
 
-.fieldset{
+fieldset{
     width: 50%;
+}
+
+h1{
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", monospace;
+}
+
+body{
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", monospace;
+    color: lime;
+    background: black;
+}
+
+input, textarea {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", monospace;
+    background-color : black;
+    color: lime;
+    border-color: black;
+}
+
+input[type=text]{
+    width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline: none;
+}
+
+input:focus{
+    border-color: black;
+}
+
+legend{
+    color: lime;
+    background-color: black;
+}
+
+.cursor{
+    position: relative;
+}
+
+.cursor i {
+    position: absolute;
+    width: 2px;
+    height: 90%;
+    background-color: gray;
+    left: 5px;
+    top: 10%;
+    animation-name: blink;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+.cursor input:focus + i {
+    display: none;
+}
+
+@keyframes blink {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
