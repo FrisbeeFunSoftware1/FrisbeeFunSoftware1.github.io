@@ -1,18 +1,3 @@
-/* Style buttons */
-.btn {
-    background-color: DodgerBlue;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-    background-color: RoyalBlue;
-}
-
 fieldset{
     width: 50%;
 }
@@ -25,6 +10,8 @@ body{
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", monospace;
     color: lime;
     background: black;
+    font-size: 16px;
+    overflow: hidden;
 }
 
 input, textarea {
@@ -32,10 +19,47 @@ input, textarea {
     background-color : black;
     color: lime;
     border-color: black;
+    font-size: 16px;
+    padding-left: 0;
+    border-left: 0;
+}
+
+a{
+    color: lime;
 }
 
 input[type=text]{
     width: 100%;
+}
+
+/*
+.scrolling-text{
+    color: lime !important;
+    width: 100%;
+    height: 100%;
+    animation: 60s code linear infinite;
+}
+
+.scrolling-text-wrapper{
+    position:absolute;
+    width: 100%;
+    margin-left: 0;
+    color: lime;
+}
+
+@keyframes code{
+    0%{top:100%;}
+    100%{top:-500%;}
+}
+*/
+
+.download{
+    text-decoration: none;
+}
+
+.download-link{
+    color: lime;
+    text-decoration: none;
 }
 
 input:focus,
@@ -52,6 +76,16 @@ input:focus{
 legend{
     color: lime;
     background-color: black;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.custom-file-upload{
+    border: transparent;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .cursor{
@@ -79,3 +113,16 @@ legend{
     from {opacity: 1;}
     to {opacity: 0;}
 }
+
+.submit{
+    font-size: 16px;
+    padding-left: 0;
+    text-decoration: none;
+}
+
+.date{
+    font-size: 16px;
+    padding-left: 0;
+}
+
+
