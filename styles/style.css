@@ -32,32 +32,11 @@ input[type=text]{
     width: 100%;
 }
 
-/*
-.scrolling-text{
-    color: lime !important;
-    width: 100%;
-    height: 100%;
-    animation: 60s code linear infinite;
-}
-
-.scrolling-text-wrapper{
-    position:absolute;
-    width: 100%;
-    margin-left: 0;
-    color: lime;
-}
-
-@keyframes code{
-    0%{top:100%;}
-    100%{top:-500%;}
-}
-*/
-
 .download{
     text-decoration: none;
 }
 
-.download-link{
+.link{
     color: lime;
     text-decoration: none;
 }
